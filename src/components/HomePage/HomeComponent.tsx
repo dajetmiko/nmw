@@ -12,8 +12,8 @@ const HomeComponent: FC<IHomeComponent> = ({}) => {
   return (
     <div className={`flex flex-col ${darkMode ? "bg-black" : "bg-white"} ${darkMode ? "text-white" : "text-black"}`}>
       <NavbarComponent />
+      <HeroComponent />
       <div className="ml-[12px] w-[calc(100% - 24px)] ">
-        <HeroComponent />
         <ProdukComponent />
         <ServiceComponent />
       </div>
