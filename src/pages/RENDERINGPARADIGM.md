@@ -1,6 +1,6 @@
 # Client-side rendering (CSR):
 
-This is when the browser generates the HTML content of a web page using JavaScript. This can provide a fast and interactive user experience, but it can also be slow for initial loading and bad for SEO. Examples of frameworks or tools that support CSR are React, Angular, Vue.js, etc.
+This is when the browser generates the HTML content of a web page using JavaScript. This can provide a fast and interactive user experience, but it can also be slow for initial loading and bad for SEO. Examples of frameworks or tools that support CSR are React, Angular, Vue.js, etc. contoh desktop app.
 
 # Server-side rendering (SSR):
 
