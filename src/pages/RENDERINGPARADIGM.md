@@ -1,7 +1,10 @@
 # Client-side rendering (CSR):
 
 This is when the browser generates the HTML content of a web page using JavaScript. This can provide a fast and interactive user experience, but it can also be slow for initial loading and bad for SEO. Examples of frameworks or tools that support CSR are React, Angular, Vue.js, etc.
-Server-side rendering (SSR): This is when the web server generates the HTML content of a web page on the server-side and sends it to the browser. This can improve initial loading times and SEO, but it can also be slower for dynamic content and require more server resources. Examples of frameworks or tools that support SSR are Next.js, Nuxt.js, SvelteKit, etc.
+
+# Server-side rendering (SSR):
+
+This is when the web server generates the HTML content of a web page on the server-side and sends it to the browser. This can improve initial loading times and SEO, but it can also be slower for dynamic content and require more server resources. Examples of frameworks or tools that support SSR are Next.js, Nuxt.js, SvelteKit, etc.
 
 # Static site generation (SSG):
 
