@@ -30,7 +30,7 @@ const HomeComponent: FC<IHomeComponent> = ({ data }) => {
         darkMode ? "text-white" : "text-black"
       }`}
     >
-      <div>{dataClient === null ? "LOADINGCLIENT" : ""}</div>
+      <div>{dataClient === null ? "===LOADINGCLIENT===" : ""}</div>
       <ul>
         {dataClient?.message.map((dogName) => (
           <li>{dogName + "CLIENT"}</li>
