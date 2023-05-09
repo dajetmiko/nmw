@@ -11,7 +11,7 @@ import axios from "axios";
 
 const HomeComponent: FC<IHomeComponent> = ({ data }) => {
   const [darkMode] = useCheckDarkMode();
-  const [dataClient, setDataClient] = useState<null | IResponseDog>();
+  const [dataClient, setDataClient] = useState<null | IResponseDog>(null);
   useEffect(() => {
     const fetch = async () => {
       console.time("getDogsClient");
@@ -30,8 +30,8 @@ const HomeComponent: FC<IHomeComponent> = ({ data }) => {
         darkMode ? "text-white" : "text-black"
       }`}
     >
+      <div>{dataClient === null ? "LOADINGCLIENT" : ""}</div>
       <ul>
-        {dataClient === null ? "LOADINGCLIENT" : ""}
         {dataClient?.message.map((dogName) => (
           <li>{dogName + "CLIENT"}</li>
         ))}
