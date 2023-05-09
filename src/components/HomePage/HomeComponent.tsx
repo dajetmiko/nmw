@@ -14,11 +14,13 @@ const HomeComponent: FC<IHomeComponent> = ({ data }) => {
   const [dataClient, setDataClient] = useState<null | IResponseDog>();
   useEffect(() => {
     const fetch = async () => {
+      console.time("getDogsClient");
       await delay(2000);
       const res = await axios.get<IResponseDog>(
         "https://dog.ceo/api/breed/hound/list"
       );
       setDataClient(res.data);
+      console.time("getDogsClient");
     };
     fetch();
   }, []);

@@ -24,10 +24,12 @@ interface IPropsHome {
 }
 
 export async function getServerSideProps() {
+  console.time("getDogs");
   await delay(3000);
   const res = await axios.get<IResponseDog>(
     `https://dog.ceo/api/breed/terrier/list`
   );
+  console.timeEnd("getDogs");
   const data = res.data;
 
   // Pass data to the page via props
