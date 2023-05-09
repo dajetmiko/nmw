@@ -31,6 +31,7 @@ const HomeComponent: FC<IHomeComponent> = ({ data }) => {
       }`}
     >
       <ul>
+        {dataClient === null ? "LOADINGCLIENT" : ""}
         {dataClient?.message.map((dogName) => (
           <li>{dogName + "CLIENT"}</li>
         ))}
