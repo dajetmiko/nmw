@@ -20,7 +20,7 @@ const HomeComponent: FC<IHomeComponent> = ({ data }) => {
         "https://dog.ceo/api/breed/hound/list"
       );
       setDataClient(res.data);
-      console.time("getDogsClient");
+      console.timeEnd("getDogsClient");
     };
     fetch();
   }, []);
